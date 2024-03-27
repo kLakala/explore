@@ -1,19 +1,8 @@
-name: Check and update renamed/removed collection items
+ule:
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron:  "0 * * * *" # every hour
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    if: github.repository_owner == 'github'
     steps:
-      - uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+
         with:
           bundler-cache: true
 
