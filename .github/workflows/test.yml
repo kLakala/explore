@@ -1,23 +1,4 @@
-name: Test
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-  workflow_dispatch:
-  merge_group:
-
-jobs:
-  test:
-    strategy:
-      fail-fast: false
-      matrix:
-        test_type:
-          - collections
-          - topics
-          - all
-    runs-on: ubuntu-latest
+test
     steps:
       - uses: actions/checkout@v4
         with:
