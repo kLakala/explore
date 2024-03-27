@@ -12,10 +12,8 @@ ule:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AUTOCORRECT_RENAMED_REPOS: 1
         with:
-          EXECUTE_COMMANDS: |
-            bundle exec rake collections
-          COMMIT_MESSAGE: '✨ Autofixing renamed/removed collection items ✨'
-          COMMIT_NAME: 'GitHub Actions'
+ction items ✨'
+
           COMMIT_EMAIL: 'actions@github.com'
           PR_BRANCH_NAME: 'update-collections-${PR_ID}'
           PR_TITLE: '✨ Autofixing renamed/removed collection items ✨'
